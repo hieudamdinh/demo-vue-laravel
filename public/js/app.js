@@ -2115,7 +2115,7 @@ __webpack_require__.r(__webpack_exports__);
       var app = this;
       var newCompany = app.company;
       axios.patch('/api/v1/companies/' + app.companyId, newCompany).then(function (resp) {
-        app.$router.replace('/');
+        app.$router.replace('/admin/companies');
       })["catch"](function (resp) {
         console.log(resp);
         alert("Could not create your company");
